@@ -1,0 +1,22 @@
+{
+  "name": "layered",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "lib": [
+    "ES2015"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
