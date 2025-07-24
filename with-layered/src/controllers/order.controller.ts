@@ -4,7 +4,9 @@ import {OrderRepository} from "../repositories/order.repository";
 
 export class OrderController {
 
-    constructor(readonly orderService: OrderService = new OrderService(new OrderRepository())) {
+    private readonly orderService: OrderService;
+
+    constructor(orderService: OrderService = new OrderService(new OrderRepository())) {
         this.orderService = orderService;
     }
 
