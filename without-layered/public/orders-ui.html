@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de Pedidos - Lanchonete (Versão Ruim)</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/orders-ui.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Sistema de Pedidos</h1>
+
+    <section class="section">
+        <h2>Novo Pedido</h2>
+        <form id="order-form" class="form">
+            <input type="text" id="item-name" placeholder="Item (ex: X-Burger)" required />
+            <input type="number" id="item-qty" placeholder="Quantidade" min="1" value="1" required />
+            <button type="submit">Criar Pedido</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Pedidos Atuais</h2>
+        <ul id="orders-list" class="orders"></ul>
+    </section>
+</div>
+</body>
+</html>

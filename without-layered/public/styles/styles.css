@@ -1,0 +1,138 @@
+/* Reset e variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2e7d32;
+    --secondary: #1976d2;
+    --danger: #c62828;
+    --gray-light: #f1f1f1;
+    --gray-dark: #444;
+    --border: #ddd;
+    --radius: 0.5rem;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --font: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary);
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 0.5rem;
+}
+
+form.form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+form input {
+    flex: 1 1 200px;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+}
+
+form button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+form button:hover {
+    background: #1b5e20;
+}
+
+ul.orders {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.order-card {
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-left: 6px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.order-card h3 {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+}
+
+.order-card p {
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+}
+
+.actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: #0d47a1;
+}
+
+.actions button.danger {
+    background-color: var(--danger);
+}
+
+.actions button.danger:hover {
+    background-color: #8e0000;
+}
