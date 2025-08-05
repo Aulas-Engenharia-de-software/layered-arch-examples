@@ -1,20 +1,23 @@
 import {Request, Response} from "express";
-import {OrderService} from "../services/order.service";
-import {OrderRepository} from "../repositories/order.repository";
+import {OrderServiceImpl} from "../../business/services/order-service";
+import {OrderRepositoryImpl} from "../../persistence/repositories/order-repository";
+import {OrderService} from "../../business/services/order-service.interface";
+import {OrderController} from "./order-controller.interface";
 
-export class OrderController {
+
+export class OrderControllerImpl implements OrderController {
 
     private readonly orderService: OrderService;
 
-    constructor(orderService: OrderService = new OrderService(new OrderRepository())) {
-        this.orderService = orderService;
+    constructor(iOrderService: OrderService = new OrderServiceImpl(new OrderRepositoryImpl())) {
+        this.orderService = iOrderService;
     }
 
-    getAll(req: Request, res: Response) {
+    getAll(req: Request, res: Response): void {
         res.json(this.orderService.listOrders());
     }
 
-    create(req: Request, res: Response) {
+    create(req: Request, res: Response): void {
         try {
             const {items} = req.body;
             const order = this.orderService.createOrder(items);
@@ -24,7 +27,7 @@ export class OrderController {
         }
     }
 
-    updateStatus(req: Request, res: Response) {
+    updateStatus(req: Request, res: Response): void {
         try {
             const id = parseInt(req.params.id);
             const {status} = req.body;
@@ -35,7 +38,7 @@ export class OrderController {
         }
     }
 
-    addItem(req: Request, res: Response) {
+    addItem(req: Request, res: Response): void {
         try {
             const id = parseInt(req.params.id);
             const {name, quantity} = req.body;
@@ -46,7 +49,7 @@ export class OrderController {
         }
     }
 
-    removeItem(req: Request, res: Response) {
+    removeItem(req: Request, res: Response): void {
         try {
             const id = parseInt(req.params.id);
             const {name} = req.body;
@@ -57,7 +60,7 @@ export class OrderController {
         }
     }
 
-    deleteOrder(req: Request, res: Response) {
+    deleteOrder(req: Request, res: Response): void {
         try {
             const id = parseInt(req.params.id);
             const deleted = this.orderService.deleteOrder(id);

@@ -4,25 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ef1079d-bafa-4334-9f8f-8a9711f7d544" name="Changes" comment="" />
+    <list default="true" id="0ef1079d-bafa-4334-9f8f-8a9711f7d544" name="Changes" comment="feat: ajuste no suffixo das classes BO, DAO e DTOs">
+      <change afterPath="$PROJECT_DIR$/../.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/business/models/order-bo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/business/services/order-service.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/business/services/order-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/persistence/daos/item-dao.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/persistence/daos/order-dao.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/persistence/repositories/order-repository.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/controllers/order-controller.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/order.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/order-controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/item.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/models/item-bo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/order.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/order.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/repositories/order-repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/order.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/routes/order.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/order.service.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LucasMartins007&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Aulas-Engenharia-de-software/layered-arch-examples.git&quot;,
+    &quot;accountId&quot;: &quot;dba54241-8c8c-45a9-a285-76f81477dfab&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -34,35 +71,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.orders-presentation.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.order.controller.ts.executor": "Run",
-    "Node.js.server.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/lucas/projetos/exercicios/layered/with-layered",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.orders-presentation.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.order.controller.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.order.routes.ts.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.server.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucas/projetos/exercicios/layered/with-layered&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\lucas\\projetos\\exercicios\\layered\\with-layered\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas\projetos\exercicios\layered\with-layered\src\business" />
       <recent name="C:\Users\lucas\projetos\exercicios\layered\with-layered\public\styles" />
       <recent name="C:\Users\lucas\projetos\exercicios\layered\with-layered\public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.server.ts">
     <configuration name="server.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/server.ts" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -98,10 +138,31 @@
       <workItem from="1751932877993" duration="809000" />
       <workItem from="1751984133905" duration="3717000" />
       <workItem from="1752013009416" duration="4742000" />
+      <workItem from="1754071571633" duration="1617000" />
+      <workItem from="1754085743843" duration="3038000" />
+      <workItem from="1754253659156" duration="675000" />
+      <workItem from="1754272906988" duration="1322000" />
+      <workItem from="1754275502431" duration="2179000" />
+      <workItem from="1754277714314" duration="3695000" />
+      <workItem from="1754424810927" duration="298000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: ajuste na versão com arquitetura em camadas">
+      <option name="closed" value="true" />
+      <created>1753326319159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753326319159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: ajuste na versão com arquitetura em camadas" />
+    <MESSAGE value="feat: ajuste no suffixo das classes BO, DAO e DTOs" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ajuste no suffixo das classes BO, DAO e DTOs" />
   </component>
 </project>
