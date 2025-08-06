@@ -5,10 +5,7 @@ import {ProdutoBo} from "../../bussines/model/produto.bo";
 
 export class ProdutoControllerImpl implements ProdutoController {
 
-    private readonly produtoService: ProdutoService;
-
-    constructor(produtoService: ProdutoService) {
-        this.produtoService = produtoService;
+    constructor(private readonly produtoService: ProdutoService) {
     }
 
     cadastrarProduto(produtoDto: ProdutoDto) {
@@ -22,13 +19,4 @@ export class ProdutoControllerImpl implements ProdutoController {
         console.log(produtoDtoCadastrado);
     }
 
-    viewCadastrandoproduto(): void {
-        const produtoDto: ProdutoDto = {
-            nome: "Produto Exemplo",
-            quantidade: 10,
-            preco: 100.00
-        }
-
-        this.cadastrarProduto(produtoDto);
-    }
 }

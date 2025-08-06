@@ -3,10 +3,7 @@ import {ProdutoDto} from "../model/produto.dto";
 
 export class ProdutoView {
 
-    private readonly produtoController: ProdutoController;
-
-    constructor(produtoController: ProdutoController) {
-        this.produtoController = produtoController;
+    constructor(private readonly produtoController: ProdutoController) {
     }
 
     viewCadastrandoproduto(): void {

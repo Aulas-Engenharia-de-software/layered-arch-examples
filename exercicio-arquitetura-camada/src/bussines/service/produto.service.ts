@@ -2,14 +2,10 @@ import {ProdutoService} from "./produto-service.interface";
 import {ProdutoBo} from "../model/produto.bo";
 import {ProdutoDao} from "../../persistencia/dao/produto.dao";
 import {ProdutoRepository} from "../../persistencia/repositorio/produto-repository.interface";
-import {ProdutoRepositorioImpl} from "../../persistencia/repositorio/produto.repositorio";
 
 export class ProdutoServiceImpl implements ProdutoService {
-
-    private readonly produtoRepositorio: ProdutoRepository;
-
-    constructor(produtoRepositorio: ProdutoRepository) {
-        this.produtoRepositorio = new ProdutoRepositorioImpl();
+    
+    constructor(private readonly produtoRepositorio: ProdutoRepository) {
     }
 
     cadastrarProduto(produtoBo: ProdutoBo): ProdutoBo {
